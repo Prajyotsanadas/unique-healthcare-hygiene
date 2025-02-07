@@ -1,0 +1,30 @@
+.header-toolbar {
+  /* Just an example of styling the toolbar color or height.
+     The "color='primary'" on mat-toolbar uses your Material theme's primary color. */
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+/* The brand logo (text) on the left */
+.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Spacer pushes the nav to the right */
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-tab-link {
+  color: #fff; // If your toolbar background is also light, this might vanish
+  font-weight: 500;
+  text-transform: none;
+}
+
+.mat-tab-link-active {
+  font-weight: 700;
+  border-bottom: 2px solid white;
+}
+

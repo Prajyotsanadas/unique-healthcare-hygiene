@@ -8,7 +8,7 @@ import { LandingComponent } from "./components/landing/landing.component";
   selector: 'app-root',
   imports: [RouterOutlet, HeaderComponent, FooterComponent, LandingComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 }
