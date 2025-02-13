@@ -1,57 +1,19 @@
 .footer {
   width: 100%;
-  background-color: #b64a7f;  /* Dark background for footer */
+  background-color: #98235a;  /* Dark background for footer */
   color: #fff;
   padding: 10px;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  height: 60px;  /* Set the initial height */
-}
-
-.footer:hover {
-  height: auto;  /* Expand to auto height on hover */
 }
 
 .footer-content {
-  transition: all 0.3s ease-in-out;
   display: block;
-  opacity: 1;
-}
-
-.footer-arrow-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer; /* Change cursor to indicate it's clickable */
-  margin-bottom: 10px;
-}
-
-.footer-arrow {
-  font-size: 2rem;
-  transition: transform 0.3s ease; /* Smooth arrow transition */
-  margin-right: 5px; /* Space between arrow and text */
-}
-
-.footer:hover .footer-arrow {
-  transform: rotate(180deg); /* Rotate arrow when hovered */
-}
-
-.see-more-text {
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .footer-details {
-  display: none;  /* Hide the details by default */
+  display: block;  /* Always display the details */
   padding-top: 10px;
   margin-top: 10px;
-  transition: display 0.3s ease-in-out;
-}
-
-.footer:hover .footer-details {
-  display: block; /* Show the details when hovering */
 }
 
 h3 {

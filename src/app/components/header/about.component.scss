@@ -1,0 +1,88 @@
+/* General Styles for the About Section */
+.about-section {
+    background-color: #f9f9f9;  /* Soft background color */
+    color: #333;  /* Dark text color for readability */
+    padding: 60px 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+  }
+  
+  /* About Content Box */
+  .about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 1.8;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #98235a; /* Primary color */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #98235a;
+    margin-top: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid #98235a; /* Border under the headings for emphasis */
+    padding-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter text for paragraphs */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+  
+  a {
+    color: #98235a; /* Primary color for links */
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+    color: #7c1a48; /* Slightly darker shade on hover */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 40px 10px; /* Reduced padding for smaller screens */
+    }
+  
+    h1 {
+      font-size: 2rem; /* Smaller header on mobile */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Smaller subheading on mobile */
+    }
+  }
+  
+  /* Add subtle animation when the content enters the view */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-content {
+    animation: fadeIn 1s ease-out;
+  }
+  
