@@ -7,10 +7,17 @@
 
   <!-- Navigation Tabs (using MatTabNav) -->
   <nav mat-tab-nav-bar>
-    <a mat-tab-link [routerLink]="['/']" routerLinkActive #rlaHome="routerLinkActive" [active]="rlaHome.isActive">
+    <a mat-tab-link
+       [routerLink]="['/']"
+       routerLinkActive #rlaHome="routerLinkActive"
+       [active]="rlaHome.isActive"
+       [routerLinkActiveOptions]="{ exact: true }"> <!-- Add this line -->
       Home
     </a>
-    <a mat-tab-link [routerLink]="['/about']" routerLinkActive #rlaAbout="routerLinkActive" [active]="rlaAbout.isActive">
+    <a mat-tab-link
+       [routerLink]="['/about']"
+       routerLinkActive #rlaAbout="routerLinkActive"
+       [active]="rlaAbout.isActive">
       About
     </a>
   </nav>
