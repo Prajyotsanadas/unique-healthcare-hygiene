@@ -1,16 +1,23 @@
 <mat-toolbar color="primary" class="header-toolbar">
   <!-- Logo / Brand Name -->
   <span class="logo">Staycare</span>
-  
+
   <!-- Spacer pushes nav items to the right -->
   <span class="spacer"></span>
 
   <!-- Navigation Tabs (using MatTabNav) -->
   <nav mat-tab-nav-bar>
-    <a mat-tab-link [routerLink]="['/home']" routerLinkActive #rlaHome="routerLinkActive" [active]="rlaHome.isActive">
+    <a mat-tab-link
+       [routerLink]="['/']"
+       routerLinkActive #rlaHome="routerLinkActive"
+       [active]="rlaHome.isActive"
+       [routerLinkActiveOptions]="{ exact: true }"> <!-- Add this line -->
       Home
     </a>
-    <a mat-tab-link [routerLink]="['/about']" routerLinkActive #rlaAbout="routerLinkActive" [active]="rlaAbout.isActive">
+    <a mat-tab-link
+       [routerLink]="['/about']"
+       routerLinkActive #rlaAbout="routerLinkActive"
+       [active]="rlaAbout.isActive">
       About
     </a>
   </nav>

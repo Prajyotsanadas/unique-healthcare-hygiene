@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';  // Home Component
-import { AboutComponent } from './components/header/about.component';  // About Component
+import { AboutComponent } from './components/about/about.component';  // About Component
 
 const routes: Routes = [
   { path: '', component: LandingComponent },  // Default route (Home)
